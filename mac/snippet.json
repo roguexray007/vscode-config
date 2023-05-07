@@ -1,0 +1,302 @@
+{
+	// Place your snippets for cpp here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"short_code": {
+		"prefix": [
+			"competitive",
+			"boilerplate",
+			"sc"
+		],
+		"body": [
+			"#include <iostream>",
+			"#include <bits/stdc++.h>",
+			"using namespace std;",
+			"",
+			"",
+			"typedef long long ll;",
+			"typedef pair<int, int> pii;",
+			"typedef pair<ll, ll> pll;",
+			"typedef pair<string, string> pss;",
+			"typedef vector<int> vi;",
+			"typedef vector<vi> vvi;",
+			"typedef vector<pii> vii;",
+			"typedef vector<ll> vl;",
+			"typedef vector<vl> vvl;",
+			"",
+			"#define FOR(a, b, c) for (int(a) = (b); (a) < (c); ++(a))",
+			"#define FORN(a, b, c) for (int(a) = (b); (a) <= (c); ++(a))",
+			"#define FORD(a, b, c) for (int(a) = (b); (a) >= (c); --(a))",
+			"#define FORSQ(a, b, c) for (int(a) = (b); (a) * (a) <= (c); ++(a))",
+			"#define FORC(a, b, c) for (char(a) = (b); (a) <= (c); ++(a))",
+			"#define FOREACH(a, b) for (auto&(a) : (b))",
+			"#define REP(i, n) FOR(i, 0, n)",
+			"#define REPN(i, n) FORN(i, 1, n)",
+			"#define MAX(a, b) a = max(a, b)",
+			"#define MIN(a, b) a = min(a, b)",
+			"#define SQR(x) ((ll)(x) * (x))",
+			"#define RESET(a, b) memset(a, b, sizeof(a))",
+			"#define fi first",
+			"#define se second",
+			"#define mp make_pair",
+			"#define pb push_back",
+			"#define ALL(v) v.begin(), v.end()",
+			"#define ALLA(arr, sz) arr, arr + sz",
+			"#define SIZE(v) (int)v.size()",
+			"#define SORT(v) sort(ALL(v))",
+			"#define REVERSE(v) reverse(ALL(v))",
+			"#define SORTA(arr, sz) sort(ALLA(arr, sz))",
+			"#define REVERSEA(arr, sz) reverse(ALLA(arr, sz))",
+			"#define PERMUTE next_permutation",
+			"#define TC(t) while (t--)",
+			"",
+			""
+		],
+		"description": "boilerplate"
+	},
+	"endl": {
+		"prefix": [
+			"nn",
+		],
+		"body": [
+			"\"\\n\";",
+		],
+		"description": "\n"
+	},
+
+	"testcase": {
+		"prefix": "tc",
+		"body": [
+		  "int main(){",
+		  "    ios_base::sync_with_stdio(false);",
+		  "    cin.tie(NULL);",
+		  "",
+		  "    int n,k;",
+		  "    cin>>n;",
+		  "    vector<int> A;",
+		  "    while(n--){",
+		  "        cin>>k;",
+		  "        A.push_back(k);",
+		  "    }",
+		  "    cout<<maximumGap(A);",
+		  "",
+		  "    return 0;",
+		  "}"
+		],
+		"description": "testcase"
+	  },
+
+	  "includes": {
+		"prefix": "ic",
+		"body": [
+		  "#include <iostream>",
+		  "#include <bits/stdc++.h>",
+		  "using namespace std;"
+		],
+		"description": "includes"
+	  },
+
+	  "basic": {
+		"prefix": "bc",
+		"body": [
+		  "#include <bits/stdc++.h>",
+		  "using namespace std;",
+		  "", 
+		  "typedef vector<int> vi;",
+		  "typedef vector<vi> vvi;",
+		  "typedef pair<int,int> pi;",
+		  "typedef vector<pi> vpi;",
+		  "typedef pair<int,pi> ppi;",
+		  "",
+		  "int main() {",
+		  "",
+		  "    return 0;",
+		  "}"
+		],
+		"description": "includes"
+	  },
+
+	  "init_undirected_graph": {
+		"prefix": "init_undirected_graph",
+		"body": [
+		  "int n,m;",
+		  "    cin >> n >> m;",
+		  "",
+		  "    vi adj[n+1];",
+		  "    for(int i=0;i<m;i++) {",
+		  "        int u,v;",
+		  "        cin >> u >> v;",
+		  "        adj[u].push_back(v);",
+		  "        adj[v].push_back(u);",
+		  "    }",
+		  "",
+		  "    // for (int i=1;i<=n;i++) {",
+		  "    //     cout << \"neighbours of node \" << i << \": \";",
+		  "    //     for (auto e: adj[i]){",
+		  "    //         cout << e << \" \";",
+		  "    //     }",
+		  "    //     cout <<endl;",
+		  "    // }",
+		  ""
+		],
+		"description": ""
+	  },
+
+	  "init_grid": {
+		"prefix": "init_grid",
+		"body": [
+		  "    int n, m;",
+		  "    cin >> n >> m;",
+		  "",
+		  "    vvi grid(n, vi(m, 0));",
+		  "",
+		  "    for (int i = 0; i < n; i++)",
+		  "    {",
+		  "        for (int j = 0; j < m; j++)",
+		  "        {",
+		  "            cin >> grid[i][j];",
+		  "        }",
+		  "    }",
+		  ""
+		],
+		"description": ""
+	  },
+	  "init_weighted_graph": {
+		"prefix": "init_weighted_graph",
+		"body": [
+		  "    int n, m;",
+		  "    cin >> n >> m;",
+		  "",
+		  "    vpi adj[n];",
+		  "    for (int i = 0; i < m; i++)",
+		  "    {",
+		  "        int u, v, w;",
+		  "        cin >> u >> v >> w;",
+		  "        adj[u].push_back(make_pair(v, w));",
+		  "    }",
+		  "",
+		  "    // for (int i = 0; i < n; i++)",
+		  "    // {",
+		  "    //     cout << \"neighbours of node \" << i << \": \";",
+		  "    //     for (auto e : adj[i])",
+		  "    //     {",
+		  "    //         cout << e.first << \" \" << e.second << endl;",
+		  "    //     }",
+		  "    //     cout << endl;",
+		  "    // }"
+		],
+		"description": "init_weighted_graph"
+	  },
+	  "disjoint_set": {
+		"prefix": "disjoint_set",
+		"body": [
+		  "class DisjointSet",
+		  "{",
+		  "    vector<int> rank, parent, size;",
+		  "",
+		  "public:",
+		  "    DisjointSet(int n)",
+		  "    {",
+		  "        rank.resize(n + 1, 0);",
+		  "        parent.resize(n + 1);",
+		  "        size.resize(n + 1);",
+		  "",
+		  "        for (int i = 0; i <= n; i++)",
+		  "        {",
+		  "            parent[i] = i;",
+		  "            size[i] = 1;",
+		  "        }",
+		  "    }",
+		  "",
+		  "    int findUParent(int node)",
+		  "    { // find ultimate parent of node and do path compression",
+		  "        if (node == parent[node])",
+		  "        {",
+		  "            return node;",
+		  "        }",
+		  "        return parent[node] = findUParent(parent[node]); // path compression",
+		  "    }",
+		  "",
+		  "    void unionByRank(int u, int v)",
+		  "    {",
+		  "        // step 1 findUltimate parent of u and v",
+		  "        int uUltimateParent = findUParent(u);",
+		  "        int vUltimateParent = findUParent(v);",
+		  "",
+		  "        if (uUltimateParent == vUltimateParent)",
+		  "            return;",
+		  "",
+		  "        // step 2 find rank of ultiamte parents",
+		  "        int uRank = rank[uUltimateParent];",
+		  "        int vRank = rank[vUltimateParent];",
+		  "",
+		  "        if (uRank < vRank)",
+		  "        {",
+		  "            parent[uUltimateParent] = vUltimateParent;",
+		  "        }",
+		  "        else if (vRank < uRank)",
+		  "        {",
+		  "            parent[vUltimateParent] = uUltimateParent;",
+		  "        }",
+		  "        else",
+		  "        {",
+		  "            parent[vUltimateParent] = uUltimateParent;",
+		  "            rank[uUltimateParent]++;",
+		  "        }",
+		  "    }",
+		  "",
+		  "    void unionBySize(int u, int v){",
+		  "        int ulp_u = findUParent(u);",
+		  "        int ulp_v = findUParent(v);",
+		  "",
+		  "        if (ulp_u == ulp_v) {",
+		  "            return;",
+		  "        }",
+		  "",
+		  "        int ulp_u_sz = size[ulp_u];",
+		  "        int ulp_v_sz = size[ulp_v];",
+		  "",
+		  "        if (ulp_u_sz < ulp_v_sz) {",
+		  "            parent[ulp_u] = ulp_v;",
+		  "            size[ulp_v] += ulp_u_sz;",
+		  "        }",
+		  "        else {",
+		  "            parent[ulp_v] = ulp_u;",
+		  "            size[ulp_u] += ulp_v_sz;",
+		  "        }",
+		  "    }",
+		  "};"
+		],
+		"description": "disjoint_set"
+	  },
+	  "tree_node": {
+		"prefix": "tree",
+		"body": [
+		  "class Node",
+		  "{",
+		  "    public: ",
+		  "        int data;",
+		  "        Node* left;",
+		  "        Node* right;",
+		  "",
+		  "    Node(int val)",
+		  "    {",
+		  "        this->data = val;",
+		  "        this->left = NULL;",
+		  "        this->right = NULL;",
+		  "    }",
+		  "};"
+		],
+		"description": "tree_node"
+	  }
+}
